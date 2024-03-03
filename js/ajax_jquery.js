@@ -16,7 +16,7 @@ $(document).ready(function() {
             method: 'GET',
             dataType: 'json',
             success: function(response) {
-                $('#output').html('OUTPUT : ' + response.joke);
+                $('#output').html('OUTPUT(JQUERY) : ' + response.joke);
             },
             error: function(xhr, status, error) {
                 $('#output').html('OUTPUT : Error')

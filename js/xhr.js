@@ -15,7 +15,7 @@ button.addEventListener('click', ()=>{
     xhr.onreadystatechange = function() {
         if(xhr.readyState ===4 && xhr.status ===200){
             const jsonData = JSON.parse(xhr.responseText);
-            div.innerHTML = 'OUTPUT : ';
+            div.innerHTML = 'OUTPUT(XHR) : ';
             div.innerHTML += jsonData.joke;
         }
     };

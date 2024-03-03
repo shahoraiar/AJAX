@@ -12,7 +12,7 @@ buttonTwo.addEventListener('click', ()=>{
             return jokeObject.joke.toUpperCase();
         })
         .then(joke => {
-            divTwo.innerHTML = 'OUTPUT : '
+            divTwo.innerHTML = 'OUTPUT(Fetch) : '
             divTwo.innerHTML += joke;
         })
         .catch( e => {
